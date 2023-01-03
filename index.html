@@ -6,54 +6,64 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
     body{
       background-color: hsl(212, 45%, 89%);
+      min-height: 100vh;
     }
-
+    
     main {
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
+      font-family: 'Outfit', sans-serif;
+
     }
 
     .wrap {
-      padding: 20px;
+      padding: 15px;
       background-color: white;
-      border-radius: 15px;
-      width: 400px;
+      border-radius: 10px;
+      max-width: 350px;
     }
 
-    img{
-      width: 400px;
-      border-radius: 15px
+    img {
+      width: 350px;
+      border-radius: 10px
+    }
+
+    h1 {
+      font-weight: 700;
     }
 
     p {
-      width: ;
-
+      font-weight: 400;
+      color: hsl(220, 15%, 55%);
     }
 
   </style>
 </head>
 <body>
-
   <main>
     <div class="wrap">
+
       <img src="./images/image-qr-code.png" alt="QR code">
     
-      <h2>Improve your front-end skills by building projects</h2>
+      <h1>Improve your front-end skills by building projects</h1>
 
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+
     </div>
   </main>
-
-
-  
-
 </body>
 </html>
